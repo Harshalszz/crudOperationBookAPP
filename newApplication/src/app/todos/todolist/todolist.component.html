@@ -1,0 +1,44 @@
+<!-- <p>new-comp works!</p> -->
+<!-- <li *ngFor="let t of todo">
+   
+      <span class="badge">{{t.id}}</span> {{t.title}} 
+      <br>
+      {{t.completed}}
+   
+   
+  </li> -->
+  <div class="text-center  p-2 ">
+    <div><strong>Harshal S. Zodape </strong> Todo-Assignment</div>
+  </div>
+  
+
+<div *ngFor="let t of todo$ |async" class="row justify-content-center align-items-center">
+    
+    <div class="card " style="width: 18rem;" [routerLink]="['/todo', t.id]">
+    
+        <div class="card-body">
+          <h5 class="card-title">Todo Number: {{t.id}}</h5>
+          <p class="card-text">{{t.title}}</p>
+          <p class="card-text">Completion Status</p>
+
+          <div *ngIf="t.completed === true">
+            
+            <a href="#" class="btn btn-success">{{t.completed}}</a>
+            <!-- <strong class="card-text text-success">{{t.completed}}</strong> -->
+          </div>
+
+          <div *ngIf="t.completed === false">
+            <a href="#" class="btn btn-danger">{{t.completed}}</a>
+            <!-- <strong class="card-text text-danger">{{t.completed}}</strong> -->
+          </div>
+          
+          
+        </div>
+      </div>
+    
+      <div class="mb-2"></div>
+
+
+</div>
+  
+<h1>Hello</h1>

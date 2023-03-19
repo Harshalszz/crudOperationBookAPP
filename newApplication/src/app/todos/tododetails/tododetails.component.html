@@ -1,0 +1,33 @@
+<!-- <p>tododetails works!</p>
+<div *ngIf="todo$ | async as hero">
+    <h3>UserID: {{ hero.userId }}</h3>
+    <p>Id: {{ hero.id }}</p>
+    <label for="hero-name"><strong>Todo Titile:  </strong>{{hero.title}}</label>
+    <label for="hero-name"><strong>Completion Status:  </strong> {{hero.completed}}</label>
+    
+</div> -->
+
+<div class="card text-center" style="width: 18rem;">
+
+    <div class="card-body " *ngIf="todo$ | async as hero">
+        <div *ngIf="hero.completed == true" class="text-bg-success p-5">
+
+            <h5 class="card-title">UserID: {{ hero.userId }}</h5>
+            <h6 class="card-title">Todo ID: {{ hero.id }}</h6>
+            <p class="card-text"><strong>Todo Titile: </strong>{{hero.title}}</p>
+            <p class="card-text"><strong>Completion Status: </strong> {{hero.completed}}</p>
+
+        </div>
+        <div *ngIf="hero.completed == false" class="text-bg-danger p-5" >
+            <h5 class="card-title">UserID: {{ hero.userId }}</h5>
+            <h6 class="card-title">Todo ID: {{ hero.id }}</h6>
+            <p class="card-text"><strong>Todo Titile: </strong>{{hero.title}}</p>
+            <p class="card-text"><strong>Completion Status: </strong> {{hero.completed}}</p>
+
+
+        </div>
+
+        <a  class="btn btn-primary mt-3" [routerLink]="['/filter']">Go Back</a>
+
+    </div>
+</div>
