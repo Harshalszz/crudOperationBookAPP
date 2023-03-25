@@ -1,0 +1,68 @@
+<p>show-lend-book works!</p>
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-10 col-lg-10 offset-md-1 col-sm-12">
+            <div>
+                
+                <div class="d-flex justify-content-between mb-5">
+
+                    <h1>Lended Book List</h1>
+
+                    
+
+                </div>
+
+                <div class="overflow-x :auto">
+
+                    <table class="table">
+
+                        <thead>
+
+                            <tr>
+                                <th scope="col">Sr.No</th>
+                                
+                                <th scope="col">Name</th>
+                                <th scope="col">BookTitle</th>
+
+                                <th scope="col">BookAuthor</th>
+                                <th scope="col">lendingDate</th>
+                                <th scope="col">returnDate</th>
+                                <th scope="col"></th>
+
+                                
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+                            <tr *ngFor="let book of lendBook$ ; let i = index">
+                                <td scope="row">{{book.id}}</td>
+                                <td scope="row">{{book.name}}</td>
+                                <td scope="row">{{book.bookTitle}}</td>
+                                <td scope="row">{{book.bookAuthor}}</td>
+                                <td scope="row">{{book.lendingDate}}</td>
+                                <td scope="row">{{book.returnDate}}</td>
+                                
+
+                                
+                                 
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+
+
+                </div>
+                <div>
+                    <a [routerLink] ="['/']">
+                        <button class="btn btn-success ">Go To Home</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

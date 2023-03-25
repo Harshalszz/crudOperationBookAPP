@@ -21,6 +21,10 @@ export class BookService {
     return this.http.get(`${this.data}`);
   }
 
+  getLendedBooks() :Observable<any>{
+    return this.http.get(`${this.lend}`)
+  }
+
   getBook(id :any): Observable<any> {
     return this.http.get(`${this.data}/${id}`);
   }

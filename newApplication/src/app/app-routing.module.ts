@@ -12,6 +12,7 @@ import { BookComponent } from './bookApp/book/book.component';
 import { AddBookComponent } from './bookApp/book/add-book/add-book.component';
 import { UpdateBookComponent } from './bookApp/book/update-book/update-book.component';
 import { LendComponent } from './bookApp/book/lend/lend.component';
+import { ShowLendBookComponent } from './bookApp/book/show-lend-book/show-lend-book.component';
 
 
 const appRoutes: Routes = [
@@ -21,6 +22,7 @@ const appRoutes: Routes = [
   {path: 'add-book', component:AddBookComponent},
   {path: 'update/:id', component:UpdateBookComponent},
   {path: 'lend', component:LendComponent},
+  {path: 'showLend', component:ShowLendBookComponent},
 
 
   // {path : 'login', component:LoginComponent},

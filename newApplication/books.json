@@ -36,6 +36,14 @@
       "bookAuthor": "Endless",
       "lendingDate": "string",
       "returnDate": "string"
+    },
+    {
+      "name": "kiteasdf",
+      "bookTitle": "dsdg",
+      "bookAuthor": "dsgsdg",
+      "lendingDate": "2023-03-08",
+      "returnDate": "2023-03-22",
+      "id": 2
     }
   ]
 }

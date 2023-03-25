@@ -23,6 +23,7 @@ import { OrderAppModule } from './HomeAssignment/orderApp/order-app.module';
 import { HomePageComponent } from './HomeAssignment/orderApp/home-page/home-page.component';
 import { BookComponent } from './bookApp/book/book.component';
 import { ToastrModule } from 'ngx-toastr/public_api';
+import { ShowLendBookComponent } from './bookApp/book/show-lend-book/show-lend-book.component';
 
 
 
@@ -36,6 +37,7 @@ import { ToastrModule } from 'ngx-toastr/public_api';
     NonCompletedComponent,
     UserTodoComponent,
     HomePageComponent,
+    ShowLendBookComponent,
     
     // TodolistComponent,
     // TododetailsComponent
