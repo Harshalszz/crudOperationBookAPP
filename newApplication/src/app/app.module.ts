@@ -21,6 +21,8 @@ import { FormsModule } from '@angular/forms';
 import { UserTodoComponent } from './todos/user-todo/user-todo.component';
 import { OrderAppModule } from './HomeAssignment/orderApp/order-app.module';
 import { HomePageComponent } from './HomeAssignment/orderApp/home-page/home-page.component';
+import { BookComponent } from './bookApp/book/book.component';
+import { ToastrModule } from 'ngx-toastr/public_api';
 
 
 
@@ -28,26 +30,26 @@ import { HomePageComponent } from './HomeAssignment/orderApp/home-page/home-page
   declarations: [
     AppComponent,
     CrisisListComponent,
-    
     PageNotFoundComponent,
-    
     FilterComponent,
     CompletedComponent,
     NonCompletedComponent,
     UserTodoComponent,
     HomePageComponent,
+    
     // TodolistComponent,
     // TododetailsComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
+    HttpClientModule,
     OrderAppModule,
     
     TodosModule,
     HeroesModule,
     
-    HttpClientModule,
+    
     
    
     FormsModule,

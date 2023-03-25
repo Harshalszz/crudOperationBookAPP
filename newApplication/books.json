@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "author": "fgjdfj",
+      "country": "india",
+      "language": "hindi",
+      "pages": 245,
+      "title": "sadggkjkfh",
+      "year": 20231,
+      "id": 2
+    },
+    {
+      "author": "fgjsdfkdhfdfj",
+      "country": "england",
+      "language": "ENlish",
+      "pages": 241005,
+      "title": "shkhkshkshdh",
+      "year": "0000",
+      "id": 3
+    },
+    {
+      "author": "vrushant",
+      "country": "Algeria",
+      "language": "Marathi",
+      "pages": 10,
+      "title": "Mazi Prem Katha",
+      "year": 2023,
+      "id": 4
+    }
+  ],
+  "lend": [
+    {
+      "id": 1,
+      "name": "john walker",
+      "bookTitle": "thebook",
+      "bookAuthor": "Endless",
+      "lendingDate": "string",
+      "returnDate": "string"
+    }
+  ]
+}

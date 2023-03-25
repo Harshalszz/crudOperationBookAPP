@@ -6,11 +6,11 @@ import { LoginpageComponent } from './auth/loginpage/loginpage.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
 
 const routes: Routes = [
-  {path: 'homepage' , component:HomePageComponent},
-  {path: '', redirectTo:'/homepage', pathMatch:"full"},
-  {path: 'loginpage' , component:LoginpageComponent},
-  {path: 'orderpage' , component:OrderDetailsComponent},
-  {path: 'customerpage' , component:CustomerDetailsComponent},
+  // {path: 'homepage' , component:HomePageComponent},
+  // {path: '', redirectTo:'/homepage', pathMatch:"full"},
+  // {path: 'loginpage' , component:LoginpageComponent},
+  // {path: 'orderpage' , component:OrderDetailsComponent},
+  // {path: 'customerpage' , component:CustomerDetailsComponent},
 
 ];
 
